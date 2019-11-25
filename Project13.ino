@@ -16,11 +16,6 @@ const int in_41 = 47 ;
 const int in_51 = 45 ;
 const int in_6 = 42 ;
 const int in_61 = 43;
-/*const int in_6 = 35 ;
-const int in_7 = 36 ;
-const int in_8 = 37 ;
-const int in_9 = 38 ;
-const int in_10 = 39 ;*/
 int pot1 = A1;
 int pot2 = A2;
 int pot3 = A3;
@@ -47,12 +42,6 @@ void setup() {
   pinMode(in_4, OUTPUT) ;
   pinMode(in_5, OUTPUT) ;
   pinMode(in_6, OUTPUT) ; 
-/*  pinMode(in_6, OUTPUT) ;
-  pinMode(in_7, OUTPUT) ;
-  pinMode(in_8, OUTPUT) ;
-  pinMode(in_9, OUTPUT) ;
-  pinMode(in_10, OUTPUT) ;*/
-//  pinMode(pot1, OUTPUT);
  
 }
 
@@ -72,11 +61,6 @@ int motor1 = analogRead(pot1);
           float digital_4 = map(motor4, 0, 1023, 0, 255);
           float digital_5 = map(motor5, 0, 1023, 0, 255);
 
-      /*    Serial.println(motor1);
-          Serial.println(motor2);
-          Serial.println(motor3);
-          Serial.println(motor4);
-          Serial.println(motor5);   */
           Serial.print("M1= ");
           Serial.println(digital_1);
           Serial.print("M2= ");
@@ -97,7 +81,7 @@ delay(2000);
 while((digital_5)>= 99)
   {
      
-     digitalWrite(in_5,LOW) ;      //For motor 5 C(till 0)
+     digitalWrite(in_5,LOW) ;      //For motor 5 C
      digitalWrite(in_51,HIGH) ;
      analogWrite(pwm_5,200) ;
      Serial.print("M5= ");
@@ -169,7 +153,7 @@ while((digital_4)<= 130)
 while((digital_5)<= 100)
   {
      
-     digitalWrite(in_5,HIGH) ;      //For motor 5 AC(till 0)
+     digitalWrite(in_5,HIGH) ;      //For motor 5 AC
      digitalWrite(in_51,LOW) ;
      analogWrite(pwm_5,200) ;
      Serial.print("M5= ");
@@ -204,7 +188,7 @@ while((digital_5)<= 100)
 while((digital_5)>= 99)
   {
      
-     digitalWrite(in_5,LOW) ;      //For motor 5 C(till 0)
+     digitalWrite(in_5,LOW) ;      //For motor 5 C
      digitalWrite(in_51,HIGH) ;
      analogWrite(pwm_5,200) ;
      Serial.print("M5= ");
@@ -313,7 +297,7 @@ while((digital_3)>= 55)
 while((digital_5)<= 101)
   {
      
-     digitalWrite(in_5,HIGH) ;      //For motor 5 AC(till 0)
+     digitalWrite(in_5,HIGH) ;      //For motor 5 AC
      digitalWrite(in_51,LOW) ;
      analogWrite(pwm_5,200) ;
      Serial.print("M5= ");
@@ -348,7 +332,7 @@ while((digital_5)<= 101)
 while((digital_5)>= 96)
   {
      
-     digitalWrite(in_5,LOW) ;      //For motor 5 C(till 0)
+     digitalWrite(in_5,LOW) ;      //For motor 5 C
      digitalWrite(in_51,HIGH) ;
      analogWrite(pwm_5,200) ;
      Serial.print("M5= ");
@@ -421,7 +405,7 @@ while((digital_3)>= 55)
 while((digital_5)<= 100)
   {
      
-     digitalWrite(in_5,HIGH) ;      //For motor 5 AC(till 0)
+     digitalWrite(in_5,HIGH) ;      //For motor 5 AC
      digitalWrite(in_51,LOW) ;
      analogWrite(pwm_5,200) ;
      Serial.print("M5= ");
@@ -456,7 +440,7 @@ while((digital_5)<= 100)
 while((digital_5)>= 99)
   {
      
-     digitalWrite(in_5,LOW) ;      //For motor 5 C(till 0)
+     digitalWrite(in_5,LOW) ;      //For motor 5 C
      digitalWrite(in_51,HIGH) ;
      analogWrite(pwm_5,200) ;
      Serial.print("M5= ");
@@ -509,7 +493,7 @@ while((digital_4)>= 125)
 while((digital_5)<= 102)
   {
      
-     digitalWrite(in_5,HIGH) ;      //For motor 5 AC(till 0)
+     digitalWrite(in_5,HIGH) ;      //For motor 5 AC
      digitalWrite(in_51,LOW) ;
      analogWrite(pwm_5,150) ;
      Serial.print("M5= ");
@@ -542,7 +526,7 @@ while((digital_3)>= 55)
 while((digital_5)>= 99)
   {
      
-     digitalWrite(in_5,LOW) ;      //For motor 5 C(till 0)
+     digitalWrite(in_5,LOW) ;      //For motor 5 C
      digitalWrite(in_51,HIGH) ;
      analogWrite(pwm_5,150) ;
      Serial.print("M5= ");
@@ -667,7 +651,7 @@ while((digital_3)<= 56)
  while((digital_5)>= 95)
   {
      
-     digitalWrite(in_5,LOW) ;      //For motor 5 C(till 0)
+     digitalWrite(in_5,LOW) ;      //For motor 5 C
      digitalWrite(in_51,HIGH) ;
      analogWrite(pwm_5,200) ;
      Serial.print("M5= ");
@@ -701,7 +685,7 @@ while((digital_3)<= 56)
 while((digital_5)<= 100)
   {
      
-     digitalWrite(in_5,HIGH) ;      //For motor 5 AC(till 0)
+     digitalWrite(in_5,HIGH) ;      //For motor 5 AC
      digitalWrite(in_51,LOW) ;
      analogWrite(pwm_5,200) ;
      Serial.print("M5= ");
@@ -866,7 +850,7 @@ while((digital_4)>= 128)
 while((digital_5)>= 98)
   {
      
-     digitalWrite(in_5,LOW) ;      //For motor 5 C(till 0)
+     digitalWrite(in_5,LOW) ;      //For motor 5 C
      digitalWrite(in_51,HIGH) ;
      analogWrite(pwm_5,200) ;
      Serial.print("M5= ");
@@ -899,7 +883,7 @@ while((digital_3)>= 48)
 
  Serial.println("-------RRRRRRRRRRRRRRRRRRR-------");
 
- ////////////////////////////////////////////////m
+ ////////////////////////////////////////////////M
 
 while((digital_4)<= 130)
   {
@@ -976,7 +960,7 @@ while((digital_4)>= 120)
 while((digital_5)>= 98)
   {
      
-     digitalWrite(in_5,LOW) ;      //For motor 5 C(till 0)
+     digitalWrite(in_5,LOW) ;      //For motor 5 C
      digitalWrite(in_51,HIGH) ;
      analogWrite(pwm_5,200) ;
      Serial.print("M5= ");
@@ -1062,7 +1046,7 @@ while((digital_4)<= 130)
 while((digital_5)>= 98)
   {
      
-     digitalWrite(in_5,LOW) ;      //For motor 5 C(till 0)
+     digitalWrite(in_5,LOW) ;      //For motor 5 C
      digitalWrite(in_51,HIGH) ;
      analogWrite(pwm_5,200) ;
      Serial.print("M5= ");
